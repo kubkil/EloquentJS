@@ -18,7 +18,20 @@
 //   }
 // }
 
+// #3
+let board = '';
+let size = 8;
+
+for (let i = 0; i < size; i++) {
+  let line = '';
+  for (let k = 0; k < size; k++) {
+    if ((i + k) % 2 === 0) {
+      line += ' ';
   } else {
-    console.log(i);
+      line += '#';
+    }
   }
+  line += '\n';
+  board += line;
 }
+console.log(board);
