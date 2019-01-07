@@ -39,16 +39,12 @@
 // }
 // console.log(board);
 
-for (let i = 0; i < size; i++) {
-  let line = '';
-  for (let k = 0; k < size; k++) {
-    if ((i + k) % 2 === 0) {
-      line += ' ';
-    } else {
-      line += '#';
-    }
-  }
-  line += '\n';
-  board += line;
-}
-console.log(board);
+// #4 Minimum
+
+// function findMin(a, b) {
+//   if (a > b) {
+//     return b;
+//   } else {
+//     return a;
+//   }
+// }
