@@ -62,3 +62,5 @@
 //     return isEven(num - 2);
 //   }
 // };
+
+// module.exports = isEven;
