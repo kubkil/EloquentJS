@@ -1,11 +1,13 @@
-// #1
+// #1 Looping a triangle
+
 // let branch = '';
 // for (line = 0; line < 8; line++) {
 //   branch += '#';
 //   console.log(branch);
 // }
 
-// #2
+// #2 FizzBuzz
+
 // for (let i = 1; i < 101; i++) {
 //   if (i % 3 === 0 && i % 5 === 0) {
 //     console.log('FizzBuzz');
@@ -18,9 +20,8 @@
 //   }
 // }
 
-// #3
-let board = '';
-let size = 8;
+// #3 Chessboard
+
 
 for (let i = 0; i < size; i++) {
   let line = '';
