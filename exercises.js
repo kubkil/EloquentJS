@@ -64,3 +64,28 @@
 // };
 
 // module.exports = isEven;
+
+// #6 Bean counting
+
+const countBs = string => {
+  let B = 0;
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] === 'B') {
+      B++;
+    }
+  }
+  return B;
+};
+
+const countChar = (string, char) => {
+  let charNum = 0;
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] === char) {
+      charNum++;
+    }
+  }
+  return charNum;
+};
+
+console.log(countBs('BBC'));
+console.log(countChar('kakkerlak', 'k'));
