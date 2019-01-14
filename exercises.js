@@ -67,15 +67,15 @@
 
 // #6 Bean counting
 
-const countBs = string => {
-  let B = 0;
-  for (let i = 0; i < string.length; i++) {
-    if (string[i] === 'B') {
-      B++;
-    }
-  }
-  return B;
-};
+// const countBs = string => {
+//   let B = 0;
+//   for (let i = 0; i < string.length; i++) {
+//     if (string[i] === 'B') {
+//       B++;
+//     }
+//   }
+//   return B;
+// };
 
 const countChar = (string, char) => {
   let charNum = 0;
@@ -85,6 +85,10 @@ const countChar = (string, char) => {
     }
   }
   return charNum;
+};
+
+const countBs = string => {
+  return countChar(string, 'B');
 };
 
 console.log(countBs('BBC'));
