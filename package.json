@@ -5,7 +5,7 @@
   "author": "Jakub Kilar <kuba.kilar@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "test": "mocha script.test.js"
+    "test": "mocha exercises.test.js"
   },
   "devDependencies": {
     "mocha": "^5.2.0"
