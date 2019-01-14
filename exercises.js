@@ -91,5 +91,5 @@ const countBs = string => {
   return countChar(string, 'B');
 };
 
-console.log(countBs('BBC'));
-console.log(countChar('kakkerlak', 'k'));
+console.log(countBs('csdfBBsdfbb'));
+console.log(countChar('sdfsdfeee', 'eee'));
