@@ -23,9 +23,10 @@ describe('isEven', () => {
     assert.equal(actual, expected);
   });
 
-  it('should return true to negative even number', () => {
-    const actual = isEven(-20);
-    const expected = true;
+describe('countChar', () => {
+  it('should return 2 to "asdgTT"', () => {
+    const actual = countChar('asdgTT', 'T');
+    const expected = 2;
 
     assert.equal(actual, expected);
   });
