@@ -1,5 +1,6 @@
 const assert = require('assert');
 const isEven = require('./exercises');
+const countChar = require('./exercises');
 
 describe('isEven', () => {
   it('should return false to uneven number', () => {
