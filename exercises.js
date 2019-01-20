@@ -87,9 +87,8 @@ const countChar = (string, char) => {
   return charNum;
 };
 
+module.exports = countChar;
+
 const countBs = string => {
   return countChar(string, 'B');
 };
-
-console.log(countBs('csdfBBsdfbb'));
-console.log(countChar('sdfsdfeee', 'eee'));
