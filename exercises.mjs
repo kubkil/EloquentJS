@@ -77,18 +77,18 @@
 //   return B;
 // };
 
-const countChar = (string, char) => {
-  let charNum = 0;
-  for (let i = 0; i < string.length; i++) {
-    if (string[i] === char) {
-      charNum++;
-    }
-  }
-  return charNum;
-};
+// const countChar = (string, char) => {
+//   let charNum = 0;
+//   for (let i = 0; i < string.length; i++) {
+//     if (string[i] === char) {
+//       charNum++;
+//     }
+//   }
+//   return charNum;
+// };
 
-module.exports = countChar;
+// module.exports = countChar;
 
-const countBs = string => {
-  return countChar(string, 'B');
-};
+// const countBs = string => {
+//   return countChar(string, 'B');
+// };
