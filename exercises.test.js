@@ -1,6 +1,6 @@
 const assert = require('assert');
-const isEven = require('./exercises');
-const countChar = require('./exercises');
+const isEven = require('./exercises.mjs');
+const countChar = require('./exercises.mjs');
 
 // describe('isEven', () => {
 //   it('should return false to uneven number', () => {
