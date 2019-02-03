@@ -101,7 +101,13 @@ const range = (start, end) => {
     array.push(i);
   }
 };
+
+const sum = (...arr) => {
+  let total = 0;
+  for (let num of arr) {
+    total = total + num;
   }
+  return total;
 };
 
 range(1, 10);
