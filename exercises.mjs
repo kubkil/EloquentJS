@@ -92,3 +92,15 @@
 // const countBs = string => {
 //   return countChar(string, 'B');
 // };
+
+// #7 The sum of range
+
+let arr = [];
+const range = (start, end) => {
+  for (let i = start; i < end + 1; i++) {
+    arr.push(i);
+  }
+};
+
+range(1, 10);
+console.log(arr);
