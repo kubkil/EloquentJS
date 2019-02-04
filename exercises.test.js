@@ -1,4 +1,5 @@
 const assert = require('assert');
+const expect = require('chai').expect;
 const isEven = require('./exercises.mjs');
 const countChar = require('./exercises.mjs');
 
