@@ -34,11 +34,18 @@ const range = require('./exercises.mjs');
 //   });
 // });
 
-describe('countChar', () => {
-  it('should return 2 to "asdgTT"', () => {
-    const actual = countChar('asdgTT', 'T');
-    const expected = 2;
+describe('range', () => {
+  it('should return [1, 2, 3, 4, 5] to "(1, 5)"', () => {
+    const actual = range(1, 5);
+    const expected = [1, 2, 3, 4, 5];
 
-    assert.equal(actual, expected);
+    expect(actual).to.have.members(expected);
+  });
+
+  it('should return [1, 3, 5] to "(1, 5, 2)"', () => {
+    const actual = range(1, 5, 2);
+    const expected = [1, 3, 5];
+
+    expect(actual).to.have.members(expected);
   });
 });
