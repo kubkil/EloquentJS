@@ -10,6 +10,7 @@
     "babel-try": "npx babel tryouts.js --watch --out-file tryouts-compiled.js --source-maps"
   },
   "devDependencies": {
+    "chai": "^4.2.0",
     "mocha": "^5.2.0"
   },
   "dependencies": {}
