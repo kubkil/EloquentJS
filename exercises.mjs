@@ -93,7 +93,11 @@
 
 const range = (start, end, step) => {
   let array = [];
-  if (step) {
+  if (step < 0) {
+    for (let i = start; i >= end; i += step) {
+      array.push(i);
+    }
+  } else if (step >= 0) {
     for (let i = start; i <= end; i += step) {
       array.push(i);
     }
@@ -105,6 +109,8 @@ const range = (start, end, step) => {
   return array;
 };
 
+console.log(range(5, 2, -1));
+
 const sum = arr => {
   let total = 0;
   for (let num of arr) {
@@ -113,9 +119,9 @@ const sum = arr => {
   return total;
 };
 
-module.exports = {
-  // isEven,
-  // countChar,
-  range,
-  sum
-};
+// module.exports = {
+//   // isEven,
+//   // countChar,
+//   range,
+//   sum
+// };
