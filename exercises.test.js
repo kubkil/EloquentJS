@@ -1,8 +1,6 @@
 const assert = require('assert');
 const expect = require('chai').expect;
-const isEven = require('./exercises.mjs');
-const countChar = require('./exercises.mjs');
-const range = require('./exercises.mjs');
+const functions = require('./exercises.mjs');
 
 // describe('isEven', () => {
 //   it('should return false to uneven number', () => {
