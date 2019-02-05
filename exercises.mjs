@@ -109,8 +109,6 @@ const range = (start, end, step) => {
   return array;
 };
 
-console.log(range(5, 2, -1));
-
 const sum = arr => {
   let total = 0;
   for (let num of arr) {
