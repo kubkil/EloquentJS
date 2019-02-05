@@ -55,6 +55,13 @@ describe('range', () => {
 
     expect(actual).to.have.members(expected);
   });
+
+  it('should return [5, 4, 3, 2, 1] to "(5, 1, -1)"', () => {
+    const actual = functions.range(5, 1, -1);
+    const expected = [5, 4, 3, 2, 1];
+
+    expect(actual).to.have.members(expected);
+  });
 });
 
 describe('sum', () => {
