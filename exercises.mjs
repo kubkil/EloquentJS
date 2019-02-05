@@ -117,5 +117,9 @@ const sum = arr => {
   return total;
 };
 
-range(1, 10);
-console.log(arr);
+module.exports = {
+  // isEven,
+  // countChar,
+  range,
+  sum
+};
