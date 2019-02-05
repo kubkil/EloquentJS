@@ -95,11 +95,18 @@
 
 // #7 The sum of range
 
+const range = (start, end, step) => {
 let array = [];
-const range = (start, end) => {
+  if (step) {
+    for (let i = start; i <= end; i += step) {
+      array.push(i);
+    }
+  } else {
   for (let i = start; i < end + 1; i++) {
     array.push(i);
   }
+  }
+  return array;
 };
 
 const sum = (...arr) => {
