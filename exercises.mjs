@@ -63,8 +63,6 @@
 //   }
 // };
 
-// module.exports = isEven;
-
 // #6 Bean counting
 
 // const countBs = string => {
@@ -87,8 +85,6 @@
 //   return charNum;
 // };
 
-// module.exports = countChar;
-
 // const countBs = string => {
 //   return countChar(string, 'B');
 // };
@@ -96,15 +92,15 @@
 // #7 The sum of range
 
 const range = (start, end, step) => {
-let array = [];
+  let array = [];
   if (step) {
     for (let i = start; i <= end; i += step) {
       array.push(i);
     }
   } else {
-  for (let i = start; i < end + 1; i++) {
-    array.push(i);
-  }
+    for (let i = start; i < end + 1; i++) {
+      array.push(i);
+    }
   }
   return array;
 };
