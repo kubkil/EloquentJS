@@ -117,70 +117,96 @@
 // printFarmInventory(7, 16, 3);
 
 // #7 Weresquirrel
-import { journal } from './journal.mjs';
+// import { journal } from './journal.mjs';
 
-function addEntry(events, squirrel) {
-  journal.push({ events, squirrel });
-}
+// function addEntry(events, squirrel) {
+//   journal.push({ events, squirrel });
+// }
 
-function phi(table) {
-  return (
-    (table[3] * table[0] - table[2] * table[1]) /
-    Math.sqrt(
-      (table[2] + table[3]) *
-        (table[0] + table[1]) *
-        (table[1] + table[3]) *
-        (table[0] + table[2])
-    )
-  );
-}
+// function phi(table) {
+//   return (
+//     (table[3] * table[0] - table[2] * table[1]) /
+//     Math.sqrt(
+//       (table[2] + table[3]) *
+//         (table[0] + table[1]) *
+//         (table[1] + table[3]) *
+//         (table[0] + table[2])
+//     )
+//   );
+// }
 
-function tableFor(event, journal) {
-  let table = [0, 0, 0, 0];
-  for (let i = 0; i < journal.length; i++) {
-    let entry = journal[i],
-      index = 0;
-    if (entry.events.includes(event)) index += 1;
-    if (entry.squirrel) index += 2;
-    table[index] += 1;
-  }
-  return table;
-}
+// function tableFor(event, journal) {
+//   let table = [0, 0, 0, 0];
+//   for (let i = 0; i < journal.length; i++) {
+//     let entry = journal[i],
+//       index = 0;
+//     if (entry.events.includes(event)) index += 1;
+//     if (entry.squirrel) index += 2;
+//     table[index] += 1;
+//   }
+//   return table;
+// }
 
-function journalEvents(journal) {
-  let events = [];
-  for (let entry of journal) {
-    for (let event of entry.events) {
-      if (!events.includes(event)) {
-        events.push(event);
-      }
-    }
-  }
-  return events;
-}
+// function journalEvents(journal) {
+//   let events = [];
+//   for (let entry of journal) {
+//     for (let event of entry.events) {
+//       if (!events.includes(event)) {
+//         events.push(event);
+//       }
+//     }
+//   }
+//   return events;
+// }
 
-function max(...numbers) {
-  let result = -Infinity;
-  for (let number of numbers) {
-    if (number > result) result = number;
-  }
-  return result;
-}
+// function max(...numbers) {
+//   let result = -Infinity;
+//   for (let number of numbers) {
+//     if (number > result) result = number;
+//   }
+//   return result;
+// }
 
-var list = {
-  value: 1,
-  rest: {
-    value: 2,
-    rest: {
-      value: 3,
-      rest: null
-    }
-  }
-};
+// var list = {
+//   value: 1,
+//   rest: {
+//     value: 2,
+//     rest: {
+//       value: 3,
+//       rest: null
+//     }
+//   }
+// };
 
-for (let event of journalEvents(journal)) {
-  let correlation = phi(tableFor(event, journal));
-  if (correlation > 0.1 || correlation < -0.1) {
-    console.log(event + ':', correlation);
-  }
-}
+// for (let event of journalEvents(journal)) {
+//   let correlation = phi(tableFor(event, journal));
+//   if (correlation > 0.1 || correlation < -0.1) {
+//     console.log(event + ':', correlation);
+//   }
+// }
+
+// #8 todolist
+
+// let toDoList = [];
+// function remember(task) {
+//   toDoList.push(task);
+// }
+// function getTask() {
+//   return toDoList.shift();
+// }
+// function rememberUrgently(task) {
+//   toDoList.unshift(task);
+// }
+
+// #9 destructuring
+
+// function phi([n00, n01, n10, n11]) {
+//   return (
+//     (n11 * n00 - n10 * n01) /
+//     Math.sqrt((n10 + n11) * (n00 + n01) * (n01 + n11) * (n00 + n10))
+//   );
+// }
+
+// const array = [1, 2, 1, 1];
+
+// console.log(phi(array));
