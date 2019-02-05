@@ -109,7 +109,7 @@ let array = [];
   return array;
 };
 
-const sum = (...arr) => {
+const sum = arr => {
   let total = 0;
   for (let num of arr) {
     total = total + num;
