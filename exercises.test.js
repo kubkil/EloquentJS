@@ -56,3 +56,12 @@ describe('range', () => {
     expect(actual).to.have.members(expected);
   });
 });
+
+describe('sum', () => {
+  it('should return 55 to "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]"', () => {
+    const actual = functions.sum([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+    const expected = 55;
+
+    assert.equal(actual, expected);
+  });
+});
