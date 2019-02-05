@@ -43,14 +43,14 @@ const functions = require('./exercises.mjs');
 
 describe('range', () => {
   it('should return [1, 2, 3, 4, 5] to "(1, 5)"', () => {
-    const actual = range(1, 5);
+    const actual = functions.range(1, 5);
     const expected = [1, 2, 3, 4, 5];
 
     expect(actual).to.have.members(expected);
   });
 
   it('should return [1, 3, 5] to "(1, 5, 2)"', () => {
-    const actual = range(1, 5, 2);
+    const actual = functions.range(1, 5, 2);
     const expected = [1, 3, 5];
 
     expect(actual).to.have.members(expected);
