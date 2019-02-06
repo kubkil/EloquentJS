@@ -91,31 +91,31 @@
 
 // #7 The sum of range
 
-const range = (start, end, step) => {
-  let array = [];
-  if (step < 0) {
-    for (let i = start; i >= end; i += step) {
-      array.push(i);
-    }
-  } else if (step >= 0) {
-    for (let i = start; i <= end; i += step) {
-      array.push(i);
-    }
-  } else {
-    for (let i = start; i < end + 1; i++) {
-      array.push(i);
-    }
-  }
-  return array;
-};
+// const range = (start, end, step) => {
+//   let array = [];
+//   if (step < 0) {
+//     for (let i = start; i >= end; i += step) {
+//       array.push(i);
+//     }
+//   } else if (step >= 0) {
+//     for (let i = start; i <= end; i += step) {
+//       array.push(i);
+//     }
+//   } else {
+//     for (let i = start; i < end + 1; i++) {
+//       array.push(i);
+//     }
+//   }
+//   return array;
+// };
 
-const sum = arr => {
-  let total = 0;
-  for (let num of arr) {
-    total = total + num;
-  }
-  return total;
-};
+// const sum = arr => {
+//   let total = 0;
+//   for (let num of arr) {
+//     total = total + num;
+//   }
+//   return total;
+// };
 
 // module.exports = {
 //   // isEven,
