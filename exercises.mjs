@@ -132,9 +132,11 @@ const reverseArrayInPlace = arr => {
   return arr;
 };
 
-// module.exports = {
-//   // isEven,
-//   // countChar,
-//   range,
-//   sum
-// };
+module.exports = {
+  isEven,
+  countChar,
+  range,
+  sum,
+  reverseArray,
+  reverseArrayInPlace
+};
