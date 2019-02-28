@@ -5,9 +5,7 @@
   "author": "Jakub Kilar <kuba.kilar@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "test": "mocha exercises.test.js",
-    "babel-ex": "npx babel exercises.js --watch --out-file exercises-compiled.js --source-maps",
-    "babel-try": "npx babel tryouts.js --watch --out-file tryouts-compiled.js --source-maps"
+    "test": "mocha exercises.test.js"
   },
   "devDependencies": {
     "chai": "^4.2.0",
