@@ -41,81 +41,77 @@
 
 // #4 Minimum
 
-// function findMin(a, b) {
-//   if (a > b) {
-//     return b;
-//   } else {
-//     return a;
-//   }
-// }
+function findMin(a, b) {
+  if (a > b) {
+    return b;
+  } else {
+    return a;
+  }
+}
 
 // #5 Recursion (with Mocha test)
 
-// const isEven = num => {
-//   if (num === 0) {
-//     return true;
-//   } else if (num === 1) {
-//     return false;
-//   } else if (num < 0) {
-//     return isEven(-num);
-//   } else {
-//     return isEven(num - 2);
-//   }
-// };
+const isEven = num => {
+  if (num === 0) {
+    return true;
+  } else if (num === 1) {
+    return false;
+  } else if (num < 0) {
+    return isEven(-num);
+  } else {
+    return isEven(num - 2);
+  }
+};
 
 // #6 Bean counting
 
-// const countBs = string => {
-//   let B = 0;
-//   for (let i = 0; i < string.length; i++) {
-//     if (string[i] === 'B') {
-//       B++;
-//     }
-//   }
-//   return B;
-// };
+const countBs = string => {
+  let B = 0;
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] === 'B') {
+      B++;
+    }
+  }
+  return B;
+};
 
-// const countChar = (string, char) => {
-//   let charNum = 0;
-//   for (let i = 0; i < string.length; i++) {
-//     if (string[i] === char) {
-//       charNum++;
-//     }
-//   }
-//   return charNum;
-// };
-
-// const countBs = string => {
-//   return countChar(string, 'B');
-// };
+const countChar = (string, char) => {
+  let charNum = 0;
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] === char) {
+      charNum++;
+    }
+  }
+  return charNum;
+};
 
 // #7 The sum of range
 
-// const range = (start, end, step) => {
-//   let array = [];
-//   if (step < 0) {
-//     for (let i = start; i >= end; i += step) {
-//       array.push(i);
-//     }
-//   } else if (step >= 0) {
-//     for (let i = start; i <= end; i += step) {
-//       array.push(i);
-//     }
-//   } else {
-//     for (let i = start; i < end + 1; i++) {
-//       array.push(i);
-//     }
-//   }
-//   return array;
-// };
+const range = (start, end, step) => {
+  let array = [];
+  if (step < 0) {
+    for (let i = start; i >= end; i += step) {
+      array.push(i);
+    }
+  } else if (step >= 0) {
+    for (let i = start; i <= end; i += step) {
+      array.push(i);
+    }
+  } else {
+    for (let i = start; i < end + 1; i++) {
+      array.push(i);
+    }
+  }
+  return array;
+};
 
-// const sum = arr => {
-//   let total = 0;
-//   for (let num of arr) {
-//     total = total + num;
-//   }
-//   return total;
-// };
+const sum = arr => {
+  let total = 0;
+  for (let num of arr) {
+    total = total + num;
+  }
+  return total;
+};
 
 // #8 Reversing an array
 
