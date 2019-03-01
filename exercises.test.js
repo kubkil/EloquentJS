@@ -2,6 +2,15 @@ const assert = require('assert');
 const expect = require('chai').expect;
 const functions = require('./exercises.mjs');
 
+describe('findMin', () => {
+  it('should return 5 to (5, 10)', () => {
+    const actual = functions.findMin(5, 10);
+    const expected = 5;
+
+    assert.equal(actual, expected);
+  });
+});
+
 describe('isEven', () => {
   it('should return false to uneven number', () => {
     const actual = functions.isEven(21);
