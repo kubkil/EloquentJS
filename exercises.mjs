@@ -144,6 +144,18 @@ const arrayToList = arr => {
   }
   return obj;
 };
+
+const arr = [];
+const listToArray = obj => {
+  for (const key in obj) {
+    if (!(typeof obj[key] === 'object')) {
+      arr.push(obj[key]);
+    } else {
+      listToArray(obj[key]);
   }
-  console.log(obj);
+  }
+
+  return arr;
+};
+
 };
