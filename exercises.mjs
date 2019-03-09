@@ -49,7 +49,7 @@ function findMin(a, b) {
   }
 }
 
-// #5 Recursion (with Mocha test)
+// #5 Recursion
 
 const isEven = num => {
   if (num === 0) {
