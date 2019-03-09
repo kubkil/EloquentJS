@@ -135,15 +135,15 @@ const reverseArrayInPlace = arr => {
 // #9 A list
 
 const arrayToList = arr => {
-  let obj;
+  let obj = null;
   for (let i = arr.length - 1; i >= 0; i--) {
     obj = {
       value: arr[i],
       rest: obj
     };
   }
-  if (obj.rest == {}) {
-    obj.rest = null;
+  return obj;
+};
   }
   console.log(obj);
 };
