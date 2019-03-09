@@ -158,4 +158,13 @@ const listToArray = obj => {
   return arr;
 };
 
+module.exports = {
+  findMin,
+  isEven,
+  countChar,
+  range,
+  sum,
+  reverseArray,
+  reverseArrayInPlace,
+  arrayToList
 };
