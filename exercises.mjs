@@ -49,7 +49,7 @@ function findMin(a, b) {
   }
 }
 
-// #5 Recursion
+// #5 Recursion (with Mocha test)
 
 const isEven = num => {
   if (num === 0) {
@@ -135,46 +135,15 @@ const reverseArrayInPlace = arr => {
 // #9 A list
 
 const arrayToList = arr => {
-  let obj = null;
+  let obj;
   for (let i = arr.length - 1; i >= 0; i--) {
     obj = {
       value: arr[i],
       rest: obj
     };
   }
-
-  return obj;
-};
-
-const arr = [];
-const listToArray = obj => {
-  for (const key in obj) {
-    if (!(typeof obj[key] === 'object')) {
-      arr.push(obj[key]);
-    } else {
-      listToArray(obj[key]);
-    }
+  if (obj.rest == {}) {
+    obj.rest = null;
   }
-
-  return arr;
-};
-
-console.log(arrayToList([1, 2, 3, 4]));
-
-console.log(
-  listToArray({
-    value: 10,
-    rest: { value: 20, rest: { value: 30, rest: { value: 40, rest: null } } }
-  })
-);
-
-module.exports = {
-  findMin,
-  isEven,
-  countChar,
-  range,
-  sum,
-  reverseArray,
-  reverseArrayInPlace,
-  arrayToList
+  console.log(obj);
 };
