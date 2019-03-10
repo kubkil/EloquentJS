@@ -152,7 +152,7 @@ const listToArray = obj => {
       arr.push(obj[key]);
     } else {
       listToArray(obj[key]);
-  }
+    }
   }
 
   return arr;
@@ -166,5 +166,6 @@ module.exports = {
   sum,
   reverseArray,
   reverseArrayInPlace,
-  arrayToList
+  arrayToList,
+  listToArray
 };
