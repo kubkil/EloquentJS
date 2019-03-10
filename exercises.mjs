@@ -178,5 +178,6 @@ module.exports = {
   reverseArray,
   reverseArrayInPlace,
   arrayToList,
-  listToArray
+  listToArray,
+  prepend
 };
