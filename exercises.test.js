@@ -99,3 +99,21 @@ describe('reverseArrayInPlace', () => {
     expect(actual).to.have.members(expected);
   });
 });
+
+describe('arrayToList', () => {
+  it('should return {value: 10, rest: {value: 20, rest: null}} to [10, 20]', () => {
+    const actual = functions.arrayToList([10, 20]);
+    const expected = { value: 10, rest: { value: 20, rest: null } };
+
+    expect(actual).to.eql(expected);
+  });
+});
+
+describe('listToArray', () => {
+  it('should return [10, 20, 30] to arrayToList([10, 20, 30])', () => {
+    const actual = functions.listToArray(functions.arrayToList([10, 20, 30]));
+    const expected = [10, 20, 30];
+
+    expect(actual).to.eql(expected);
+  });
+});
