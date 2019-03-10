@@ -158,6 +158,17 @@ const listToArray = obj => {
   return arr;
 };
 
+const prepend = (elem, list) => {
+  const obj = {
+    value: elem,
+    rest: list
+  };
+
+  return obj;
+};
+
+console.log(prepend(10, prepend(20, null)));
+
 module.exports = {
   findMin,
   isEven,
