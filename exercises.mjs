@@ -176,8 +176,6 @@ const nth = (list, num) => {
   }
 };
 
-console.log(nth(arrayToList([10, 20, 30]), 2));
-
 module.exports = {
   findMin,
   isEven,
@@ -188,5 +186,6 @@ module.exports = {
   reverseArrayInPlace,
   arrayToList,
   listToArray,
-  prepend
+  prepend,
+  nth
 };
