@@ -154,7 +154,6 @@ const listToArray = obj => {
       listToArray(obj[key]);
     }
   }
-
   return arr;
 };
 
@@ -167,7 +166,17 @@ const prepend = (elem, list) => {
   return obj;
 };
 
-console.log(prepend(10, prepend(20, null)));
+const nth = (list, num) => {
+  if (!list) {
+    return undefined;
+  } else if (num === 0) {
+    return list.value;
+  } else {
+    return nth(list.rest, num - 1);
+  }
+};
+
+console.log(nth(arrayToList([10, 20, 30]), 2));
 
 module.exports = {
   findMin,
