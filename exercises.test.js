@@ -119,10 +119,19 @@ describe('listToArray', () => {
 });
 
 describe('prepend', () => {
-  it('should return {value: 10, rest: {value: 20, rest: null}} to (10, prepend(20, null));', () => {
+  it('should return {value: 10, rest: {value: 20, rest: null}} to (10, prepend(20, null))', () => {
     const actual = functions.prepend(10, functions.prepend(20, null));
     const expected = { value: 10, rest: { value: 20, rest: null } };
 
     expect(actual).to.eql(expected);
+  });
+});
+
+describe('nth', () => {
+  it('should return 20 to (nth(arrayToList([10, 20, 30]), 1))', () => {
+    const actual = functions.nth(functions.arrayToList([10, 20, 30]), 1);
+    const expected = 20;
+
+    assert.equal(actual, expected);
   });
 });
